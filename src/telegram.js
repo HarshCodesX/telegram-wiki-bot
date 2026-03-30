@@ -1,5 +1,3 @@
-// src/telegram.js
-
 const axios = require("axios");
 
 const BASE_URL = `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}`;

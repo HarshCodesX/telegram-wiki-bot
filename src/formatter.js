@@ -1,10 +1,8 @@
-// src/formatter.js
-
 function formatMessage({ title, summary, url }) {
   return (
-    `📖 *${title}*\n\n` +
+    `*${title}*\n\n` +
     `${summary}\n\n` +
-    `🔗 [Read full article](${url})`
+    `[Read full article](${url})`
   );
 }
 
