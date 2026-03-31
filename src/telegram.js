@@ -6,8 +6,8 @@ async function sendMessage(text) {
   const res = await axios.post(`${BASE_URL}/sendMessage`, {
     chat_id: process.env.TELEGRAM_CHAT_ID,
     text,
-    parse_mode: "Markdown",        // enables *bold*, _italic_, [links](url)
-    disable_web_page_preview: false // lets Telegram show a link preview card
+    parse_mode: "Markdown",
+    disable_web_page_preview: false
   });
 
   return res.data;
